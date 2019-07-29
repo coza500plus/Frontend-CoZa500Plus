@@ -1,0 +1,721 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    height: 165px;
+    box-shadow: 0px 10px 31.04px 0.96px rgba(49, 27, 146, 0.16);
+    display: flex;
+}
+
+#header-wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+#logo {
+    float: left;
+    display: inline-block;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style-type: none;
+    float: left;
+    padding: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+nav ul li a {
+    cursor: pointer;
+    background-color: #6746c3;
+    border: 15px solid #6746c3;
+    border-width: 8px 12px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    background-color: #311b92;
+    border-color: #311b92;
+    box-shadow: 0px 0px 22px -8px rgba(0, 0, 0, 0.64);
+}
+
+#login-btn {
+    background-color: #6746c3;
+    border: 15px solid #6746c3;
+    border-width: 8px 12px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+#login-btn:hover {
+    background-color: #311b92;
+    border-color: #311b92;
+    box-shadow: 0px 0px 22px -8px rgba(0, 0, 0, 0.64);
+}
+
+main {
+    text-align: center;
+}
+
+h1 {
+    color: #2a2a2a;
+    font-size: 23px;
+    display: inline-block;
+}
+
+#title1 {
+    margin-top: 36px;
+    margin-bottom: 0;
+}
+
+#title2 {
+    color: #2a2a2a;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+#title3 {
+    display: block;
+}
+
+/*OFERTY*/
+
+.all-offers {
+    text-align: center;
+}
+
+.offer {
+    text-align: left;
+    background-color: #e4e4e4;
+    display: inline-block;
+
+    height: 350px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/*STOPKA*/
+
+#footer-1 {
+    background-color: #311b92;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+
+footer #footer-1 p {
+    color: #fff;
+}
+
+#footer-1 a:link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 30px;
+}
+
+#footer-1 a:active {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+#footer-1 a:visited {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+#footer-2 {
+    background-color: #282c2f;
+    height: 100px;
+    box-sizing: border-box;
+    border-top: 2px solid rgba(103, 70, 195, .5);
+    text-align: center;
+    color: rgba(255, 255, 255, .3);
+    font-size: 18px;
+}
+
+.footer-btn {
+    font-size: 14px;
+    margin: 0 25px 0 25px;
+}
+
+.footer-btn, a:link {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*MEDIA QUERIES*/
+
+@media (min-width: 1200px) {
+    .offer {
+        width: 17%;
+    }
+}
+
+@media (max-width: 1199px) {
+    .offer {
+        width: 22%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .offer {
+        width: 30%;
+    }
+}
+
+@media (max-width: 750px) {
+    .offer {
+        width: 42%;
+    }
+}
+
+@media (max-width: 475px) {
+    .offer {
+        width: 75%;
+    }
+}
+
+/************************COŚ INNEGO**************/
+
+#title_form {
+    letter-spacing: 2px;
+}
+
+#submit {
+    background-color: #6746c3;
+    color: #fff;
+    border: 15px solid #6746c3;
+    border-width: 8px 12px;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 110px;
+}
+
+#submit:hover {
+    background-color: #311b92;
+    border-color: #311b92;
+    box-shadow: 0px 0px 22px -8px rgba(0, 0, 0, 0.64);
+    cursor: pointer;
+}
+
+/******************************** TEAM *******************************/
+
+.team {
+    margin-top: 50px;
+}
+
+/******************************** FORMULARZ.PHP *****************************/
+
+#title_form {
+    letter-spacing: 2px;
+}
+
+
+
+.input {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    border-color: #aaa;
+    margin: 10px;
+    border-width: 1.5px;
+    min-height: 30px;
+    font-size: 18px;
+    max-width: 600px;
+}
+
+.input:focus,
+.input:hover {
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(166, 161, 166, 1);
+    -moz-box-shadow: 0px 0px 15px 5px rgba(166, 161, 166, 1);
+    box-shadow: 0px 0px 15px 5px rgba(166, 161, 166, 1);
+    background-color: #f5f5f5;
+}
+
+. .blad {
+    color: #991f1f;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+/******************************* UDANY_FORMULARZ.PHP *************************************/
+
+#title_form_bad {
+    text-transform: uppercase;
+}
+
+/******************************* NIEUDANY_FORMULARZ.PHP *************************************/
+
+#title_form_good {
+    text-transform: uppercase;
+}
+
+.res_of_form
+{
+
+    padding:200px;
+}
+
+.return {
+    background-color: #6746c3;
+    color: #ccc;
+    border: 15px solid #6746c3;
+    border-width: 8px 12px;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 170px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.return:hover {
+    background-color: #311b92;
+    border-color: #311b92;
+    box-shadow: 0px 0px 22px -8px rgba(0, 0, 0, 0.64);
+    cursor: pointer;
+}
+
+.return a:visited {
+    display: block;
+    background-color: #6746c3;
+    color: #ccc;
+    border: 15px solid #6746c3;
+    border-width: 8px 12px;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 170px;
+}
+
+/**************************** LOGIN ****************************/
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    /*margin: 8px 0;*/
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#filling-form1 {
+    width: 65vw;
+    min-height: 238px;
+    background-color: #eceff1;
+    display: inline-block;
+    margin-top: 36px;
+    border-radius: 10px;
+}
+
+#filling-form {
+    width: 35vw;
+    min-height: 238px;
+    background-color: #f2f2f2;
+    display: inline-block;
+    margin-top: 36px;
+    border-radius: 10px;
+}
+
+#filling-form-2 {
+    width: 16vw;
+    min-height: 238px;
+    background-color: #f2f2f2;
+    display: inline-block;
+    margin-top: 36px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #311b92;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #512da8;
+}
+
+a.a-regulamin {
+    color: #0000EE;
+}
+
+/********************************** BANER *********************************/
+
+#banner-nt-form {
+    min-height: 13px;
+    background-color: 	#FFFFFF;
+    display: inline-block;
+    border-radius: 10px;
+    float: left;
+    margin-top: 58px;
+    width: 58vw;
+    margin-right: 10vw;
+    max-width: 67px;
+
+}
+
+#container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 700vw;
+}
+
+#banner-nt-form img {
+    width: 55vw;
+    float: left;
+    margin-top: 5px;
+ f
+
+}
+.profile {
+    margin-top: 50px;
+    display: inline-flex;
+}
+/*********************** PROFIL.PHP **************************/
+
+#profil
+{
+    width: 100%;
+    background-color: green;
+    height: 570px;
+}
+
+#welcome_user
+{
+    margin:15px;
+}
+
+#user
+{
+    display: inline-block;
+    background-color:#e2e2e2;
+    width: 30%;
+    min-height: 525px;
+    margin:5px;
+    padding: 10px;
+    padding-bottom:10px;
+    border: 1px solid #9c9c9c;
+}
+
+#edit_user_icon
+{
+    width: 30px;
+    height: 30px;
+    position:relative;
+    top:10%;
+    left: 90%;
+}
+
+#edit_user_icon:hover
+{
+    cursor:pointer;
+}
+
+#edit_user_icon img
+{
+    width: 30px;
+    height: 30px;
+}
+
+#edit_user
+{
+    position:relative;
+    top:15%;
+    left: 33%;
+     /*display: none; */
+}
+
+#trujkont_XD
+{
+    width: 0;
+    height: 0;
+    position:absolute;
+    top:15%;
+    left: 58%;
+    border-right:10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid #f5f5f5;
+    margin-top: 3px;
+}
+
+
+
+#edit_user ul
+{
+    width: 135px;
+    display: block;
+    background-color: #f5f5f5;
+    position:absolute;
+    top:15%;
+    left: 39%;
+    padding:0;
+    border:1px solid #e0e0e0;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+#edit_user ul > li
+{
+    list-style-type : none;
+   text-align:left;
+    min-height: 30px;
+    padding: 10px;
+    padding-bottom:0px;
+    margin:5px;
+    border-top: 0.0084px dashed #bbb;
+}
+
+#edit_user ul > li:first-child
+{
+    border-top: none;
+}
+
+#edit_user ul > li:hover
+{
+   background-color:#6746c3;
+   color:white;
+   cursor: pointer;
+}
+
+#pic_of_user
+{
+    width: 150px;
+    height: 150px;
+    border: 5px solid black;
+    margin-left: auto;
+    margin-right:auto;
+    border:1px solid #9c9c9c;
+    border-radius: 150px;
+}
+
+#pic_of_user:hover
+{
+    cursor: pointer;
+}
+
+#pic_of_user img
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+
+
+}
+
+#user_description
+{
+    background-color: #f2f2f2;
+    height: 210px;
+    border: 1px solid #9c9c9c;
+    padding: 0 13px;
+    border-radius: 7px;
+    overflow: auto;
+    text-align: justify;
+    font-size: 17px;
+}
+
+#my_offers
+{
+    display: inline-block;
+    width: 50%;
+    height: 515px;
+    background-color: #e2e2e2 ;
+    margin:5px;
+    padding:10px;
+    padding-bottom: 20px;
+    text-align: left;
+    border: 1px solid #9c9c9c;
+    overflow: auto;
+}
+
+#offers_h1
+{
+    border-bottom: 2px solid #2b2b2b;
+    margin-bottom: 10px;
+    margin-left: 1  px;
+
+}
+
+.user_offer
+{
+    background-color: #f2f2f2;
+   display: inline-block;
+   width: 200px;
+   height: 200px;
+   border: 1px solid black;
+   margin:9px;
+   margin-left: 11px;
+   border-radius: 5px;
+}
+
+/**************************************************************/
+/********************PO_REJESTRACJI.PHP************************/
+.after_register
+{
+    width:38vw;
+    margin-left: auto;
+    margin-right:auto;
+    text-align: center;
+    padding: 20px 55px;
+    background-color: #fbfbfb;
+    min-height: 238px;
+
+
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+    margin-top: 65px;
+    margin-bottom: 55px;
+}
+
+.after_register p
+{
+    font-size: 18px;
+}
+
+.after_register_head
+{
+    color:#6900bf;
+    font-weight: 400;
+}
+
+.like_login_btn
+{
+    background-color: #6746c3;
+    border: 15px solid #6746c3;
+    border-width: 8px 12px;
+    border-radius: 5px;
+    color: #fff;
+    width:100px;
+    margin-top: 20px;
+}
+
+.like_login_btn:hover
+{
+     background-color: #311b92;
+    border-color: #311b92;
+    box-shadow: 0px 0px 22px -8px rgba(0, 0, 0, 0.64);
+    cursor: pointer;
+}
+
+.before_option_radio
+{
+    width: 32px;
+    height: 52px;
+    display: inline-block;
+    margin:55px 20px;
+    margin-bottom: 60px;
+}
+
+.option_radio
+{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    top:2px;
+    border: 3px solid #6100c2;
+    background-color:#fbfbfb;
+}
+
+.option_radio input[type="radio"]
+{
+    background-color:#fbfbfb;
+    width:35px;
+    height: 33px;
+    text-align: center;
+    position: relative;
+    right:6px;
+    bottom: 3px;
+    background-color: blue;
+    cursor: pointer;
+}
+
+.type_of_offer
+{
+    display: inline-block;
+    width:230px;
+    height: 50px;
+    margin: 25px 50px;
+    padding:10px;
+    padding-bottom: 0px;
+    padding-top: 10px;
+    text-align: left;
+    font-size: 17px;
+    -webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.75);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.type_of_offer img
+{
+    height: 40px;
+    width: 40px;
+    margin-right:10px;
+
+}
+
+.type_of_offer input
+{
+    display: none;
+}
+
+.type_of_offer input + label
+{
+    display: inline-block;
+}
+
+.type_of_offer:checked
+{
+background-color: blue;
+}
+
+.type_of_offer:focus
+{
+    background-color: blue;
+}
+
+
+
+
+.inside_type_of_offer
+{
+    display: inline-block;
+    position: relative;
+    height: 40px;
+    width: 70%;
+    bottom:15px;
+
+}
