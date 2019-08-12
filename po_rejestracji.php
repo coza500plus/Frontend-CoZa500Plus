@@ -19,29 +19,29 @@
 
 	    <i><p>Określ proszę ile masz dzieci.</p></i>	
 	   	<div class="before_option_radio"><b>1</b>
-		    <div class="option_radio">
-		    	<label > <input type="radio" value="1" name="children" checked> </label>
-		    </div>
+		    <label class="option_radio">
+		    	  <input type="radio" value="1" name="children" checked> 
+		    </label>
 		</div>
 		<div class="before_option_radio"><b>2</b>
-	    	<div class="option_radio">
-	    		<label > <input type="radio" value="2" name="children"> </label>
-	    	</div>
+	    	<label class="option_radio">
+	    		 <input type="radio" value="2" name="children"> 
+	    	</label>
 	    </div>
 	    <div class="before_option_radio"><b>3</b>
-		    <div class="option_radio">
-		    	<label > <input type="radio" value="3" name="children"> </label>
-		    </div>
+		    <label class="option_radio">
+		    	 <input type="radio" value="3" name="children"> 
+		    </label>
 	    </div>
 	    <div class="before_option_radio"><b>4</b>
-		    <div class="option_radio">
-		    	<label > <input type="radio" value="4" name="children"> </label>
-		    </div>
+		    <label class="option_radio">
+		    	 <input type="radio" value="4" name="children"> 
+		    </label>
 	    </div>
 	    <div class="before_option_radio"><b>5<</b>
-		    <div class="option_radio">
-		    	<label > <input type="radio" value="5" name="children"> </label>
-		    </div>
+		    <label class="option_radio">
+		    	 <input type="radio" value="5" name="children"> 
+		    </label>
 	    </div><br>
 	       
 			<button class="like_login_btn">DALEJ</button>
@@ -50,7 +50,9 @@
 	<div class="after_register">
 		<i> <h1 class="after_register_head">KROK 2</h1> </i> 
 		
-		<div class="cos"></div>
+		<div id ="age_of_children">
+			
+		</div>
 
 		<button class="like_login_btn">DALEJ</button>
 	</div>
@@ -61,7 +63,7 @@
 		<i> <p>Określ, jakie oferty interesują Cię najbardziej.</p> </i> 
 
 		<label for="Zabawki"  class="type_of_offer" >
-			<input type="checkbox" name="kategoria" id="Zabawki" c>
+			<input type="checkbox" name="kategoria" id="Zabawki" >
 			<img src="test.jpg" alt="test">
 			<div class="inside_type_of_offer">Zabawki</div> 
 		</label>
@@ -122,6 +124,28 @@
 
 	<script>
 
+	///////////////////////// KROK 1 //////////////////////////////////////////////////
+	const option_radio = document.getElementsByClassName('option_radio');
+	Array.from(option_radio).forEach(function(radio_option) {
+
+			radio_option.addEventListener('click', function(r_o){
+
+				if(radio_option.children[0].checked){
+					 this.style.background = '#6100c2';
+				}
+				else {
+					this.style.background = '#fbfbfb';
+				}
+
+				if_checked_STEP1();
+			})
+
+	})
+	///////////////////////// KROK 2 //////////////////////////////////////////////////
+
+	 age_of_children = document.getElementById('age_of_children');
+
+	/////////////////////////// KROK 3 + ogolne ///////////////////////////////////////////
 		var next = 0;
 		var zmien_kolor = true;
 
@@ -141,6 +165,20 @@
 					after_register[next].style.display = 'none';
 					next++;
 					after_register[next].style.display = 'block';
+
+					if(next == 1) {
+						if_checked_STEP1();
+					}
+
+					if(next == 2) {
+						add_age_of_kid_STEP2();
+
+						//console.log(option_radio[0].children[0].value);
+					}
+
+					if(next == 3) {
+						if_checked_STEP3();
+					}
 			})
 		})
 
@@ -148,24 +186,55 @@
 
 			 clicked_offer.addEventListener('click', function(t_o_o) {
 
-			 	if(zmien_kolor){
-			 	this.style ="background-color:blue";
-			 	zmien_kolor = false;
-			
-			 	console.log('niebieski');
-			 	}
-			 	else  {
-			 		this.style ="background-color:green";
-			 		console.log('zielony');
-			 		zmien_kolor = true;
-			 	}
-			 	
-			 		
-			 
-			 	
-			})
+			 				// DZIALA // 
 
+			 	if(clicked_offer.children[0].checked) {
+			 		this.style.background ="green";
+			 		this.style.color = 'white';
+			 		console.log("A");
+			 	}
+
+			 	else {
+			 		this.style.background ="#fbfbfb";
+			 		this.style.color ='black';
+			 	}
+			})
 		 })		
+
+		function if_checked_STEP1(){
+			for(var m = 0; m < option_radio.length; m++) {
+				if(option_radio[m].children[0].checked){
+					option_radio[m].style.background = '#6100c2';
+				}
+				else option_radio[m].style.background = '#fbfbfb';
+			}
+			return
+		}
+
+		function add_age_of_kid_STEP2(){
+			for(var m = 0; m < option_radio.length; m++) {
+				if(option_radio[m].children[0].checked){
+				age_of_children.innerHTML = '';//WyczyszczenieDlaPewnosciRaczejNiepotrzebne 
+
+					for(var n = 0; n < option_radio[m].children[0].value; n++) {
+					age_of_children.innerHTML+=
+					'<label class="age_of_kid"><input type="radio" name="age_'+n+'"></label>';
+					}
+					break;
+				}
+		}
+	}
+
+		function if_checked_STEP3(){
+			for(var m = 0; m < type_of_offer.length; m++) {
+				if(type_of_offer[m].children[0].checked){
+					type_of_offer[m].style.background = 'green';
+					type_of_offer[m].style.color = 'white';
+				}
+				else type_of_offer[m].style.background = '#fbfbfb';
+					 type_of_offer[m].style.color = 'black';
+			}
+		}
 
 	</script>
 

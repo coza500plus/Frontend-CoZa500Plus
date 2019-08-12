@@ -62,45 +62,7 @@
 
                 <article class="offer">
 
-                    4
 
-                </article>
-
-                <article class="offer">
-
-                    5
-
-                </article>
-
-                <article class="offer">
-
-                    1
-
-                </article>
-
-                <article class="offer">
-
-                    2
-
-                </article>
-
-                <article class="offer">
-
-                    3
-
-                </article>
-
-                <article class="offer">
-
-                    4
-
-                </article>
-
-                <article class="offer">
-
-                    5
-
-                </article>
 
             </section>
 

@@ -10,7 +10,7 @@
             <br>
 
 
-
+            <P>
             <li>§ 1. Serwis internetowy "Co Za 500 Plus" ma za zadanie umożliwić szybki dostęp do spersonalizowanych ofert zakupowych. </li>
             <br>
 
@@ -71,7 +71,7 @@
           <li> Oceniać Okazje dodawane przez algorytm bądź innych użytkowników. </li></br >
           <li> Dodawać interesujące okazje. </li></br >
           <li> Komentować okazje oraz dyskutować na temat okazji. </li></br >
-
+        </P>
           </div>
 
 
